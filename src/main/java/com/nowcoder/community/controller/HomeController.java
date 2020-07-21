@@ -42,7 +42,6 @@ public class HomeController {
                 discussPosts.add(map);
             }
         }
-        System.out.println("hello");
         model.addAttribute("discussPosts",discussPosts);
         return "/index";
     }
