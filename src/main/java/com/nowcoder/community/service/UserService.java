@@ -11,4 +11,8 @@ public interface UserService {
     public Map<String,Object> register(User user);
 
     public int activation(int userId,String code);
+
+    public Map<String, Object> login(String username, String password, int expiredSeconds);
+
+    public void logout(String ticket);
 }
