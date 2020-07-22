@@ -1,5 +1,6 @@
 package com.nowcoder.community.service;
 
+import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.entity.User;
 
 import java.util.Map;
@@ -15,4 +16,8 @@ public interface UserService {
     public Map<String, Object> login(String username, String password, int expiredSeconds);
 
     public void logout(String ticket);
+
+    public LoginTicket findLoginTicket(String ticket);
+
+    public int updateHeader(int id,String headerUrl);
 }
